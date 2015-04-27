@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AF25AA091AE6B7FA007EB50E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF25AA081AE6B7FA007EB50E /* AppDelegate.swift */; };
-		AF25AA0B1AE6B7FA007EB50E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AF25AA0A1AE6B7FA007EB50E /* GameScene.sks */; };
 		AF25AA0D1AE6B7FA007EB50E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF25AA0C1AE6B7FA007EB50E /* GameScene.swift */; };
 		AF25AA0F1AE6B7FA007EB50E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF25AA0E1AE6B7FA007EB50E /* GameViewController.swift */; };
 		AF25AA121AE6B7FA007EB50E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF25AA101AE6B7FA007EB50E /* Main.storyboard */; };
 		AF25AA141AE6B7FA007EB50E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF25AA131AE6B7FA007EB50E /* Images.xcassets */; };
 		AF25AA171AE6B7FA007EB50E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF25AA151AE6B7FA007EB50E /* LaunchScreen.xib */; };
 		AF25AA231AE6B7FA007EB50E /* WalkingBearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF25AA221AE6B7FA007EB50E /* WalkingBearTests.swift */; };
+		AF25AA2D1AE6B86A007EB50E /* BearImages.atlas in Resources */ = {isa = PBXBuildFile; fileRef = AF25AA2C1AE6B86A007EB50E /* BearImages.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 		AF25AA031AE6B7FA007EB50E /* WalkingBear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalkingBear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF25AA071AE6B7FA007EB50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF25AA081AE6B7FA007EB50E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF25AA0A1AE6B7FA007EB50E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		AF25AA0C1AE6B7FA007EB50E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		AF25AA0E1AE6B7FA007EB50E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		AF25AA111AE6B7FA007EB50E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		AF25AA1C1AE6B7FA007EB50E /* WalkingBearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalkingBearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF25AA211AE6B7FA007EB50E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF25AA221AE6B7FA007EB50E /* WalkingBearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingBearTests.swift; sourceTree = "<group>"; };
+		AF25AA2C1AE6B86A007EB50E /* BearImages.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BearImages.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 		AF25AA051AE6B7FA007EB50E /* WalkingBear */ = {
 			isa = PBXGroup;
 			children = (
+				AF25AA2C1AE6B86A007EB50E /* BearImages.atlas */,
 				AF25AA081AE6B7FA007EB50E /* AppDelegate.swift */,
-				AF25AA0A1AE6B7FA007EB50E /* GameScene.sks */,
 				AF25AA0C1AE6B7FA007EB50E /* GameScene.swift */,
 				AF25AA0E1AE6B7FA007EB50E /* GameViewController.swift */,
 				AF25AA101AE6B7FA007EB50E /* Main.storyboard */,
@@ -200,8 +200,8 @@
 			files = (
 				AF25AA171AE6B7FA007EB50E /* LaunchScreen.xib in Resources */,
 				AF25AA141AE6B7FA007EB50E /* Images.xcassets in Resources */,
-				AF25AA0B1AE6B7FA007EB50E /* GameScene.sks in Resources */,
 				AF25AA121AE6B7FA007EB50E /* Main.storyboard in Resources */,
+				AF25AA2D1AE6B86A007EB50E /* BearImages.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +351,7 @@
 				INFOPLIST_FILE = WalkingBear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -361,6 +362,7 @@
 				INFOPLIST_FILE = WalkingBear/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -417,6 +419,7 @@
 				AF25AA281AE6B7FA007EB50E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF25AA291AE6B7FA007EB50E /* Build configuration list for PBXNativeTarget "WalkingBearTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +428,7 @@
 				AF25AA2B1AE6B7FA007EB50E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
